@@ -1,0 +1,157 @@
+// vars
+
+$header-font: 'Merriweather', sans-serif;
+$body-font: 'Lato', sans-serif;
+
+$bg-color: #171723;
+$spot-color: #07a8d1;
+$text-color: #818c90;
+$link-color: #d8cc72;
+
+// core
+
+div#___gatsby {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 50px 0 0 0;
+  background-color: $bg-color;
+}
+
+p {
+  color: $text-color;
+  font-family: $body-font;
+  font-size: 1.7rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $spot-color;
+  font-family: $header-font;
+}
+
+a {
+  color: $link-color;
+  text-decoration-skip: ink;
+}
+
+// header
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .twitter {
+    border: none;
+    &:hover {
+      color: $spot-color;
+    }
+  }
+  nav {
+    margin-left: auto;
+    display: flex;
+  }
+  a {
+    font-family: $body-font;
+    font-size: 2rem;
+    text-decoration: none;
+    border-bottom: 2px solid rgba($text-color, .25);
+    line-height: 30px;
+    color: $text-color;
+    &:hover {
+      border-color: $spot-color;
+    }
+    &.active {
+      border-color: $spot-color;
+    }
+    &.is-disabled {
+      pointer-events: none;
+      color: rgba($text-color, .25);
+    }
+    &:not(:last-of-type) {
+      margin-right: 2.6rem;
+    }
+  }
+}
+
+// index
+
+.home {
+  .intro-card {
+    margin-top: 9rem;
+    font-size: 2.5em;
+    p {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    a {
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+  .read {
+    margin-top: 10rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+// about
+
+.about {
+  margin-top: 9rem;
+  h1 {
+    font-size: 2.5em;
+  }
+  .professional-cards,
+  .open-source-cards,
+  .education-cards,
+  .life-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 480px;
+    vertical-align: top;
+    min-height: 160px;
+    h1 {
+      font-weight: 100;
+      font-size: 2rem;
+      color: $text-color;
+      font-family: $body-font;
+      span {
+        color: rgba($text-color, .3);
+      }
+      a {
+        color: $link-color;
+        &:hover {
+          color: $text-color;
+        }
+      }
+    }
+    .progress,
+    .desc {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .rating,
+    .tags {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+    .where {
+      opacity: .5;
+      font-size: 1.1rem;
+    }
+  }
+}
