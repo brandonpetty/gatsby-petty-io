@@ -9,7 +9,7 @@ const AboutPage = () => (
         <h1>Software Engineer <span>@</span> <a href="https://www.hirezstudios.com/">Hi-Rez Studios</a></h1>
         <p className="desc">I develop web apps for marketing, account management, and promotions.</p>
         <p className="tags">React, JavaScript, PHP, Wordpress, AWS</p>
-        <p className="where">July 2012 - Now</p>
+        <p className="where">July 2012 - Current</p>
       </div>
       <div className="card">
         <h1>Web Engineer <span>@</span> <a href="http://www.dreamcreative.com/">Hello Pixel</a></h1>
@@ -45,18 +45,18 @@ const AboutPage = () => (
     <h1>Life</h1>
     <div className="life-cards">
       <div className="card">
-        <h1>Super Mario Odyssey <span>on</span> Nintendo Switch</h1>
-        <p className="progress">Story complete. Cap and Cascade Kingdom 100%.</p>
+        <h1>Spider-Man <span>on</span> PlayStation 4</h1>
+        <p className="progress">47% Story Complete</p>
         <p className="rating">Highly Recommend</p>
       </div>
       <div className="card">
-        <h1>Call of Duty: WWII <span>on</span> Playstation 4</h1>
+        <h1>God of War <span>on</span> PlayStation 4</h1>
         <p className="progress">Level 20. Story incomplete.</p>
         <p className="rating">Recommend</p>
       </div>
       <div className="card">
-        <h1>The Godfather <span>on</span> Boardgames</h1>
-        <p className="progress">Three plays. Worker placement. Eric Lang.</p>
+        <h1>ROOT <span>on</span> Boardgames</h1>
+        <p className="progress">Four plays. Area Control.</p>
         <p className="rating">Highly Recommend</p>
       </div>
     </div>
